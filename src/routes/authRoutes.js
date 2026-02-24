@@ -6,6 +6,8 @@ const authMiddleware = require("../middleware/authMiddleware");
 router.post("/register", authController.register);
 router.post("/login", authController.login);
 
+//health
+
 // Protected Route Example
 router.get("/profile", authMiddleware, (req, res) => {
   res.json({
