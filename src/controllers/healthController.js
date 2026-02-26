@@ -2,7 +2,11 @@ const db = require("../config/db");
 const { calculateResults } = require("../services/healthCalculator");
 
 /*
+<<<<<<< HEAD
 CREATE PROFILE
+=======
+CREATE PROFILE file
+>>>>>>> eb86250e8d4fc78104a086de5be98189f1eafaf3
 */
 const createHealthProfile = (req, res) => {
   const user_id = req.user?.id || req.body.user_id;
